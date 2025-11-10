@@ -5,7 +5,7 @@ import json
 import datetime
 import pytz
 import pandas as pd
-import ta
+import pandas_ta as ta
 import logging
 
 logging.getLogger().setLevel(logging.CRITICAL)
@@ -134,4 +134,5 @@ async def main():
         await asyncio.sleep(60)
 
 if __name__ == "__main__":
+
     asyncio.run(main())
